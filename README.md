@@ -81,35 +81,55 @@ space_energy_monitor/
 
 ## Como Executar
 
-**Requisito:** Python 3.10 ou superior
+## Pré-requisitos
 
-Verifique sua versao:
+- Python 3.10 ou superior
+- pip3
+
+Verifique sua versão:
 ```bash
-python --version
+python3 --version
 ```
 
-Clone o repositorio e entre na pasta:
+## Instalação
+
+Clone o repositório:
 ```bash
-git clone https://github.com/GabrielRoma0/SEU_REPOSITORIO.git
-cd space_energy_monitor
+git clone https://github.com/GabrielRoma0/GS-SERS.git
+cd GS-SERS/space_energy_monitor
 ```
 
-Execute em um dos tres modos disponiveis:
-
+Instale a dependência necessária:
 ```bash
-# Monitoramento continuo (encerra com Ctrl+C)
-python main.py
-
-# Modo demonstracao: roda 5 ciclos e encerra automaticamente
-python main.py --demo
-
-# Modo crise: forca condicoes criticas para demonstrar os alertas
-python main.py --simular-crise
+pip3 install matplotlib --break-system-packages
 ```
 
-Ao encerrar, o relatorio e salvo automaticamente em `reports/relatorio_missao.txt`.
+## Execução
 
----
+Monitoramento contínuo (encerra com Ctrl+C):
+```bash
+python3 main.py
+```
+
+Modo demonstração — roda 10 ciclos e encerra sozinho:
+```bash
+python3 main.py --demo
+```
+
+Modo crise — força condições críticas para demonstrar os alertas:
+```bash
+python3 main.py --simular-crise
+```
+
+Modo sem IA — caso não tenha conexão com a internet:
+```bash
+python3 main.py --demo --sem-ia
+```
+
+Ao encerrar, os arquivos abaixo são gerados automaticamente em `reports/`:
+- `relatorio_missao.txt` — resumo completo da sessão
+- `graficos_missao.png` — evolução temporal de cada módulo
+- `balanco_final.png` — distribuição do consumo energético
 
 ## Niveis de Alerta
 
