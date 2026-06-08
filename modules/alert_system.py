@@ -22,7 +22,7 @@ from enum import Enum
 class NivelAlerta(Enum):
     INFO    = "INFO"
     AVISO   = "AVISO"
-    CRITICO = "CRÍTICO"
+    CRITICO = "CRITICO"
     FALHA   = "FALHA"
 
 
@@ -30,7 +30,7 @@ class NivelAlerta(Enum):
 COR = {
     "INFO":     "\033[96m",    # Ciano
     "AVISO":    "\033[93m",    # Amarelo
-    "CRÍTICO":  "\033[91m",    # Vermelho
+    "CRITICO":  "\033[91m",    # Vermelho
     "FALHA":    "\033[95m",    # Magenta
     "RESET":    "\033[0m",
     "VERDE":    "\033[92m",
@@ -114,7 +114,7 @@ def verificar_rendimento(modulo) -> list[Alerta]:
         alertas.append(Alerta(
             modulo=modulo.nome,
             nivel=NivelAlerta.CRITICO,
-            mensagem=f"Rendimento CRÍTICO: {n*100:.1f}% (mín seguro: 70%)",
+            mensagem=f"Rendimento CRITICO: {n*100:.1f}% (mín seguro: 70%)",
             valor_atual=n,
             limite=0.70,
             resposta_automatica="-> Módulo sinalizado para manutenção de emergência, redundância ativada"
@@ -144,7 +144,7 @@ def verificar_fator_potencia(modulo) -> list[Alerta]:
         alertas.append(Alerta(
             modulo=modulo.nome,
             nivel=NivelAlerta.CRITICO,
-            mensagem=f"Fator de Potência CRÍTICO: {fp:.3f} (mín: 0.75)",
+            mensagem=f"Fator de Potência CRITICO: {fp:.3f} (mín: 0.75)",
             valor_atual=fp,
             limite=0.75,
             resposta_automatica="-> Ativando banco de capacitores de correção de FP"
@@ -198,9 +198,9 @@ def status_geral_missao(todos_alertas: list[Alerta]) -> tuple[str, str]:
     Retorna o status geral da missão baseado no pior alerta ativo.
     """
     if any(a.nivel == NivelAlerta.FALHA for a in todos_alertas):
-        return "FALHA CRÍTICA", COR["CRÍTICO"]
+        return "FALHA CRÍTICA", COR["CRITICO"]
     if any(a.nivel == NivelAlerta.CRITICO for a in todos_alertas):
-        return "ATENÇÃO MÁXIMA", COR["CRÍTICO"]
+        return "ATENÇÃO MÁXIMA", COR["CRITICO"]
     if any(a.nivel == NivelAlerta.AVISO for a in todos_alertas):
         return "MONITORANDO", COR["AVISO"]
     return "NOMINAL", COR["VERDE"]

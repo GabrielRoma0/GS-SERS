@@ -27,14 +27,14 @@ def barra_progresso(valor: float, maximo: float, tamanho: int = 20, invertido: b
 
     if invertido:
         if pct > 0.90:
-            cor = COR["CRÍTICO"]
+            cor = COR["CRITICO"]
         elif pct > 0.75:
             cor = COR["AVISO"]
         else:
             cor = COR["VERDE"]
     else:
         if pct < 0.60:
-            cor = COR["CRÍTICO"]
+            cor = COR["CRITICO"]
         elif pct < 0.80:
             cor = COR["AVISO"]
         else:
@@ -71,9 +71,9 @@ def painel_modulo(modulo, alertas_modulo: list) -> None:
     # Determina cor do módulo baseado nos alertas
     tem_critico = any(a.nivel.value in ["CRÍTICO", "FALHA"] for a in alertas_modulo)
     tem_aviso   = any(a.nivel.value == "AVISO" for a in alertas_modulo)
-    cor_mod = COR["CRÍTICO"] if tem_critico else (COR["AVISO"] if tem_aviso else COR["VERDE"])
+    cor_mod = COR["CRITICO"] if tem_critico else (COR["AVISO"] if tem_aviso else COR["VERDE"])
 
-    status_com = f"{COR['VERDE']}● ONLINE{COR['RESET']}" if modulo.comunicacao_ok else f"{COR['CRÍTICO']}✗ FALHA{COR['RESET']}"
+    status_com = f"{COR['VERDE']}● ONLINE{COR['RESET']}" if modulo.comunicacao_ok else f"{COR['CRITICO']}✗ FALHA{COR['RESET']}"
 
     print(f"\n  {cor_mod}{COR['NEGRITO']}[ {modulo.nome} ]{COR['RESET']}  Comunicação: {status_com}  |  Uptime: {modulo.tempo_operacao_h:.0f}h")
     print(f"  {'─'*64}")

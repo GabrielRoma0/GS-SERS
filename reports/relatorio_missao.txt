@@ -1,74 +1,84 @@
 ======================================================================
    RELATÓRIO DE MONITORAMENTO ENERGÉTICO — MISSÃO ORBITAL
 ======================================================================
-  Gerado em    : 2026-06-07 15:20:24
-  Ciclos exec. : 10
+  Gerado em    : 2026-06-08 15:20:08
+  Ciclos exec. : 23
 
-  Total de alertas registrados: 18
+  Total de alertas registrados: 95
 
   MÓDULO: PROPULSÃO
   ──────────────────────────────────────────────────
-    P Ativa   : 9.1008 kW
-    S Aparente: 10.8423 kVA
-    Q Reativa : 5.8933 kvar
-    Rendimento: 87.9%
-    Fator Pot.: 0.839
-    Temperatura: 71.4°C
-    Uptime: 10h
-    Alertas (7):
-      [15:20:12] AVISO: Fator de Potência baixo: 0.840 (recomendado: ≥0.85)
-      [15:20:15] AVISO: Fator de Potência baixo: 0.839 (recomendado: ≥0.85)
-      [15:20:18] AVISO: Fator de Potência baixo: 0.836 (recomendado: ≥0.85)
-      [15:20:21] AVISO: Fator de Potência baixo: 0.841 (recomendado: ≥0.85)
-      [15:20:24] AVISO: Fator de Potência baixo: 0.839 (recomendado: ≥0.85)
+    P Ativa   : 9.1185 kW
+    S Aparente: 10.4302 kVA
+    Q Reativa : 5.0638 kvar
+    Rendimento: 87.7%
+    Fator Pot.: 0.874
+    Temperatura: 88.9°C
+    Uptime: 23h
+    Alertas (29):
+      [15:19:49] CRITICO: Temperatura CRÍTICA: 87.7°C (máx: 90.0°C)
+      [15:19:54] CRITICO: Temperatura CRÍTICA: 88.0°C (máx: 90.0°C)
+      [15:19:59] CRITICO: Temperatura CRÍTICA: 88.0°C (máx: 90.0°C)
+      [15:20:03] CRITICO: Temperatura CRÍTICA: 88.9°C (máx: 90.0°C)
+      [15:20:08] CRITICO: Temperatura CRÍTICA: 88.9°C (máx: 90.0°C)
 
   MÓDULO: COMUNICAÇÃO
   ──────────────────────────────────────────────────
-    P Ativa   : 1.6689 kW
-    S Aparente: 2.1093 kVA
-    Q Reativa : 1.2899 kvar
-    Rendimento: 83.9%
-    Fator Pot.: 0.791
-    Temperatura: 37.6°C
-    Uptime: 10h
-    Alertas (10):
-      [15:20:12] AVISO: Fator de Potência baixo: 0.787 (recomendado: ≥0.85)
-      [15:20:15] AVISO: Fator de Potência baixo: 0.786 (recomendado: ≥0.85)
-      [15:20:18] AVISO: Fator de Potência baixo: 0.781 (recomendado: ≥0.85)
-      [15:20:21] AVISO: Fator de Potência baixo: 0.790 (recomendado: ≥0.85)
-      [15:20:24] AVISO: Fator de Potência baixo: 0.791 (recomendado: ≥0.85)
+    P Ativa   : 1.6714 kW
+    S Aparente: 2.0696 kVA
+    Q Reativa : 1.2205 kvar
+    Rendimento: 83.8%
+    Fator Pot.: 0.808
+    Temperatura: 39.8°C
+    Uptime: 22h
+    Alertas (22):
+      [15:19:44] AVISO: Fator de Potência baixo: 0.825 (recomendado: ≥0.85)
+      [15:19:49] AVISO: Fator de Potência baixo: 0.825 (recomendado: ≥0.85)
+      [15:19:54] AVISO: Fator de Potência baixo: 0.819 (recomendado: ≥0.85)
+      [15:19:59] AVISO: Fator de Potência baixo: 0.810 (recomendado: ≥0.85)
+      [15:20:04] AVISO: Fator de Potência baixo: 0.808 (recomendado: ≥0.85)
 
   MÓDULO: SUPORTE VITAL
   ──────────────────────────────────────────────────
-    P Ativa   : 2.6402 kW
-    S Aparente: 3.0471 kVA
-    Q Reativa : 1.5212 kvar
-    Rendimento: 90.9%
-    Fator Pot.: 0.866
-    Temperatura: 22.2°C
-    Uptime: 10h
+    P Ativa   : 3.5400 kW
+    S Aparente: 4.0287 kVA
+    Q Reativa : 1.9232 kvar
+    Rendimento: 67.8%
+    Fator Pot.: 0.879
+    Temperatura: 25.5°C
+    Uptime: 22h
+    Alertas (22):
+      [15:19:44] CRITICO: Rendimento CRITICO: 67.8% (mín seguro: 70%)
+      [15:19:49] CRITICO: Rendimento CRITICO: 67.8% (mín seguro: 70%)
+      [15:19:54] CRITICO: Rendimento CRITICO: 67.8% (mín seguro: 70%)
+      [15:19:59] CRITICO: Rendimento CRITICO: 67.8% (mín seguro: 70%)
+      [15:20:04] CRITICO: Rendimento CRITICO: 67.8% (mín seguro: 70%)
 
   MÓDULO: LABORATÓRIO
   ──────────────────────────────────────────────────
-    P Ativa   : 6.4005 kW
-    S Aparente: 7.4016 kVA
-    Q Reativa : 3.7172 kvar
-    Rendimento: 85.9%
-    Fator Pot.: 0.865
-    Temperatura: 22.9°C
-    Uptime: 10h
+    P Ativa   : 6.4133 kW
+    S Aparente: 9.2146 kVA
+    Q Reativa : 6.6165 kvar
+    Rendimento: 85.8%
+    Fator Pot.: 0.696
+    Temperatura: 28.2°C
+    Uptime: 22h
+    Alertas (22):
+      [15:19:45] CRITICO: Fator de Potência CRITICO: 0.693 (mín: 0.75)
+      [15:19:50] CRITICO: Fator de Potência CRITICO: 0.694 (mín: 0.75)
+      [15:19:55] CRITICO: Fator de Potência CRITICO: 0.697 (mín: 0.75)
+      [15:20:00] CRITICO: Fator de Potência CRITICO: 0.697 (mín: 0.75)
+      [15:20:04] CRITICO: Fator de Potência CRITICO: 0.696 (mín: 0.75)
 
   MÓDULO: NAVEGAÇÃO
   ──────────────────────────────────────────────────
-    P Ativa   : 1.9586 kW
-    S Aparente: 2.2064 kVA
-    Q Reativa : 1.0159 kvar
-    Rendimento: 91.9%
-    Fator Pot.: 0.888
-    Temperatura: 28.0°C
-    Uptime: 10h
-    Alertas (1):
-      [15:20:21] FALHA: PERDA DE SINAL — link de comunicação interrompido
+    P Ativa   : 1.9613 kW
+    S Aparente: 2.2651 kVA
+    Q Reativa : 1.1331 kvar
+    Rendimento: 91.8%
+    Fator Pot.: 0.866
+    Temperatura: 31.6°C
+    Uptime: 22h
 
 ======================================================================
   FIM DO RELATÓRIO
