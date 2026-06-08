@@ -6,6 +6,15 @@ Desafio: Global Solution 2026 — Soluções em Energias Renováveis e Sustentá
 
 ---
 
+## Integrantes
+
+| Nome completo | RM |
+|---------------|----|
+|  Gabriel Botelho Romão             | 570589 |
+|  Thor Ferreira Camargo             | 569543 |
+
+---
+
 ## Descrição
 
 Este projeto implementa um sistema de monitoramento inteligente de energia aplicado a uma missão espacial experimental simulada. O sistema interpreta dados operacionais de cinco módulos da nave, calcula grandezas elétricas em tempo real, gera alertas automáticos diante de condições críticas e exibe um dashboard organizado no terminal.
@@ -16,13 +25,13 @@ A solução aplica diretamente os conceitos estudados na disciplina: Potência A
 
 ## Módulos Monitorados
 
-| Módulo        | Função                                      | P útil (kW) |
-|---------------|---------------------------------------------|-------------|
-| PROPULSAO     | Motores ionicos de manobra orbital          | 8.0         |
-| COMUNICACAO   | Antenas e transmissores de dados            | 1.4         |
-| SUPORTE VITAL | Sistemas de ar, temperatura e pressao       | 2.4         |
-| LABORATORIO   | Equipamentos de pesquisa cientifica         | 5.5         |
-| NAVEGACAO     | Computadores de bordo e sensores            | 1.8         |
+| Módulo        | Função                                      |
+|---------------|---------------------------------------------|
+| PROPULSAO     | Motores ionicos de manobra orbital          |
+| COMUNICACAO   | Antenas e transmissores de dados            |
+| SUPORTE VITAL | Sistemas de ar, temperatura e pressao       |
+| LABORATORIO   | Equipamentos de pesquisa cientifica         |
+| NAVEGACAO     | Computadores de bordo e sensores            |
 
 ---
 
@@ -39,8 +48,6 @@ A solução aplica diretamente os conceitos estudados na disciplina: Potência A
 ---
 
 ## Conceitos Aplicados
-
-As formulas utilizadas sao as mesmas estudadas no Checkpoint 01:
 
 ```
 P = P_util / rendimento          (Potencia Ativa em kW)
@@ -168,16 +175,7 @@ BALANCO ENERGETICO TOTAL DA MISSAO
 
 ---
 
-## Integrantes
-
-| Nome completo | RM |
-|---------------|----|
-|  Gabriel Botelho Romão             | 570589 |
-|  Thor Ferreira Camargo             | 569543 |
-
----
-
 ## Links
 
-- Repositorio GitHub: 
-- Video YouTube: 
+- Repositorio GitHub: https://github.com/GabrielRoma0/GS-SERS
+- Video YouTube: https://www.youtube.com/watch?v=uiKPPgEhx7c
